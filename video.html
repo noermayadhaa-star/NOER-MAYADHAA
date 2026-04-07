@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeri Video - Tema Coklat</title>
+    <style>
+        /* =========================================
+           CSS INTERNAL
+           Tema: Earthy Brown (Coklat Hangat)
+           ========================================= */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f1ea;
+            color: #3e2723;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #5d4037;
+            color: white;
+            padding: 2rem 1rem;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        nav {
+            background-color: #3e2723;
+            display: flex;
+            justify-content: center;
+            padding: 10px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav a {
+            color: #d7ccc8;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 5px;
+            border-radius: 5px;
+            transition: 0.3s;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            background-color: #8d6e63;
+            color: white;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 40px auto;
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            text-align: center;
+            color: #5d4037;
+            margin-bottom: 30px;
+            border-bottom: 2px solid #d7ccc8;
+            padding-bottom: 10px;
+        }
+
+        /* --- STYLING VIDEO GRID --- */
+        .video-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .video-item {
+            background: #efebe9;
+            border-radius: 8px;
+            overflow: hidden;
+            border: 3px solid #d7ccc8;
+        }
+
+        /* Mengatur ukuran video agar responsif */
+        .video-item video, 
+        .video-item iframe {
+            width: 100%;
+            aspect-ratio: 16 / 9; /* Menjaga perbandingan layar lebar */
+            display: block;
+            border: none;
+        }
+
+        .video-info {
+            padding: 15px;
+            text-align: center;
+        }
+
+        .video-info h3 {
+            font-size: 1.1rem;
+            color: #5d4037;
+            margin-bottom: 5px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+            font-size: 0.9rem;
+            color: #795548;
+        }
+
+        @media (max-width: 600px) {
+            .container { margin: 15px; padding: 15px; }
+            nav { flex-direction: column; align-items: center; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Galeri Video</h1>
+        <p>Koleksi Konten Multimedia</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Beranda</a>
+        <a href="biodata.html">Biodata</a>
+        <a href="foto.html">Foto</a>
+        <a href="video.html">Video</a>
+    </nav>
+
+    <div class="container">
+        <h2>Koleksi Video Saya</h2>
+        
+        <div class="video-grid">
+            
+            <div class="video-item">
+                <video controls>
+                    <source src="video-pemandangan.mp4" type="video/mp4">
+                    Browser Anda tidak mendukung tag video.
+                </video>
+                <div class="video-info">
+                    <h3>Video Lokal</h3>
+                    <p>Contoh pemutaran file MP4 dari folder.</p>
+                </div>
+            </div>
+
+            <div class="video-item">
