@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biodata - Web Tema Coklat</title>
+    <style>
+        /* CSS DALAM SATU FILE */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f1ea; /* Warna latar krem */
+            color: #3e2723; /* Warna teks coklat tua */
+        }
+
+        header {
+            background-color: #5d4037; /* Coklat medium */
+            color: white;
+            padding: 2rem;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        nav {
+            background-color: #3e2723; /* Coklat gelap */
+            display: flex;
+            justify-content: center;
+            padding: 10px;
+            position: sticky;
+            top: 0;
+        }
+
+        nav a {
+            color: #d7ccc8;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 5px;
+            border-radius: 5px;
+            transition: 0.3s;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            background-color: #8d6e63;
+            color: white;
+        }
+
+        .container {
+            max-width: 700px;
+            margin: 40px auto;
+            background: white;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            text-align: center;
+            color: #5d4037;
+            margin-bottom: 30px;
+            border-bottom: 2px solid #d7ccc8;
+            padding-bottom: 10px;
+        }
+
+        /* Styling Tabel Biodata */
+        .bio-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 1.1rem;
+        }
+
+        .bio-table tr {
+            border-bottom: 1px solid #efebe9;
+        }
+
+        .bio-table tr:last-child {
+            border-bottom: none;
+        }
+
+        .bio-table td {
+            padding: 15px 10px;
+        }
+
+        .label {
+            font-weight: bold;
+            color: #8d6e63;
+            width: 35%;
+        }
+
+        .content {
+            color: #3e2723;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+            font-size: 0.9rem;
+            color: #795548;
+        }
+
+        /* Responsif untuk HP */
+        @media (max-width: 600px) {
+            .container {
+                margin: 20px;
+                padding: 20px;
+            }
+            .bio-table td {
+                display: block;
+                width: 100%;
+                padding: 5px 0;
+            }
+            .label {
+                padding-top: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Profil Saya</h1>
+        <p>Mengenal lebih dekat melalui biodata diri</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Beranda</a>
+        <a href="biodata.html">Biodata</a>
+        <a href="foto.html">Foto</a>
+        <a href="video.html">Video</a>
+    </nav>
+
+    <div class="container">
+        <h2>Biodata Pribadi</h2>
+        <table class="bio-table">
+            <tr>
+                <td class="label">Nama Lengkap</td>
+                <td class="content">John Doe</td>
+            </tr>
+            <tr>
+                <td class="label">Tempat, Tgl Lahir</td>
+                <td class="content">Jakarta, 01 Januari 2000</td>
+            </tr>
+            <tr>
+                <td class="label">Jenis Kelamin</td>
+                <td class="content">Laki-laki</td>
+            </tr>
+            <tr>
+                <td class="label">Alamat</td>
+                <td class="content">Jl. Coklat Manis No. 12, Indonesia</td>
+            </tr>
+            <tr>
+                <td class="label">Pendidikan</td>
+                <td class="content">S1 Teknik Informatika</td>
+            </tr>
+            <tr>
+                <td class="label">Keahlian</td>
+                <td class="content">Web Design, UI/UX, Photography</td>
+            </tr>
+            <tr>
+                <td class="label">Email</td>
+                <td class="content">halo@emailkamu.com</td>
+            </tr>
+        </table>
+    </div>
+
+    <footer>
+        &copy; 2026 - Noer Mayadha
+    </footer>
+
+</body>
+</html>
