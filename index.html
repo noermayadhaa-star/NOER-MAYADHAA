@@ -10,27 +10,24 @@
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f1ea; /* Warna latar krem/coklat muda */
-            color: #3e2723; /* Warna teks coklat tua */
+            background-color: #f4f1ea;
+            color: #3e2723;
         }
-
         header {
-            background-color: #5d4037; /* Coklat medium */
+            background-color: #5d4037;
             color: white;
             padding: 2rem;
             text-align: center;
             box-shadow: 0 2px 5px rgba(0,0,0,0.1);
         }
-
         nav {
-            background-color: #3e2723; /* Coklat gelap */
+            background-color: #3e2723;
             display: flex;
             justify-content: center;
             padding: 10px;
             position: sticky;
             top: 0;
         }
-
         nav a {
             color: #d7ccc8;
             text-decoration: none;
@@ -40,7 +37,6 @@
             transition: 0.3s;
             font-weight: bold;
         }
-
         nav a:hover {
             background-color: #8d6e63;
             color: white;
@@ -66,6 +62,28 @@
             text-align: center;
         }
 
+        /* Tombol Tugas 2 - GitHub */
+        .btn-tugas2 {
+            display: inline-block;
+            background-color: #8d6e63;     /* Warna coklat sedang */
+            color: white;
+            padding: 14px 32px;
+            margin: 25px 0;
+            font-size: 1.15rem;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            transition: all 0.3s ease;
+        }
+
+        .btn-tugas2:hover {
+            background-color: #5d4037;     /* Coklat lebih gelap saat hover */
+            transform: translateY(-4px);
+            box-shadow: 0 8px 18px rgba(0,0,0,0.2);
+            color: white;
+        }
+
         footer {
             text-align: center;
             padding: 20px;
@@ -75,7 +93,7 @@
             border-top: 1px solid #d7ccc8;
         }
 
-        /* Responsif untuk HP */
+        /* Responsif */
         @media (max-width: 600px) {
             nav {
                 flex-direction: column;
@@ -88,7 +106,6 @@
     </style>
 </head>
 <body>
-
     <header>
         <h1>Selamat datang!</h1>
         <p>Di Website Saya</p>
@@ -103,20 +120,28 @@
 
     <div class="container">
         <section class="welcome-section">
-            <h2></h2>
+            <h2>Halo! Kenalin saya Maya 👋</h2>
             <p>
-                Halo! Kenalin saya Maya, Selamat datang di website bertema Coklat yang saya buat.
+                Selamat datang di website bertema Coklat yang saya buat.
             </p>
             <p>
-                Silahkan jelajahi menu navigasi di atas untuk melihat detail biodata diri, 
-                koleksi foto dan video yang tersedia ya.
+                Silahkan jelajahi menu navigasi di atas untuk melihat detail biodata diri,
+                koleksi foto dan video yang tersedia.
+            </p>
+
+            <!-- Tombol Tugas 2 Link ke GitHub -->
+            <a href="https://github.com/" target="_blank" class="btn-tugas2">
+                📂 Tugas 2 - Lihat di GitHub
+            </a>
+
+            <p style="margin-top: 20px; color: #6d4c41;">
+                Klik tombol di atas untuk melihat repository Tugas 2 di GitHub.
             </p>
         </section>
     </div>
 
     <footer>
-        &copy; 2026 - Dibuat oleh Maya ❤️ 
+        &copy; 2026 - Dibuat oleh Maya ❤️
     </footer>
-
 </body>
 </html>
