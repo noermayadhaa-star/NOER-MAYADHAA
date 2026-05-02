@@ -62,23 +62,32 @@
             text-align: center;
         }
 
-        /* Tombol Tugas 2 - GitHub */
-        .btn-tugas2 {
+        /* Container untuk tombol Tugas 2 & Tugas 3 */
+        .tugas-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin: 30px 0;
+        }
+
+        /* Tombol Tugas */
+        .btn-tugas {
             display: inline-block;
-            background-color: #8d6e63;     /* Warna coklat sedang */
+            background-color: #8d6e63;
             color: white;
-            padding: 14px 32px;
-            margin: 25px 0;
-            font-size: 1.15rem;
+            padding: 14px 28px;
+            font-size: 1.1rem;
             font-weight: bold;
             text-decoration: none;
             border-radius: 8px;
             box-shadow: 0 4px 12px rgba(0,0,0,0.15);
             transition: all 0.3s ease;
+            min-width: 220px;
         }
 
-        .btn-tugas2:hover {
-            background-color: #5d4037;     /* Coklat lebih gelap saat hover */
+        .btn-tugas:hover {
+            background-color: #5d4037;
             transform: translateY(-4px);
             box-shadow: 0 8px 18px rgba(0,0,0,0.2);
             color: white;
@@ -101,6 +110,13 @@
             }
             nav a {
                 margin: 5px 0;
+            }
+            .tugas-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+            .btn-tugas {
+                min-width: 80%;
             }
         }
     </style>
