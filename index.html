@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Beranda - Web Tema Coklat</title>
     <style>
-        /* CSS DALAM SATU FILE */
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
@@ -62,28 +61,27 @@
             text-align: center;
         }
 
-        /* Container untuk tombol Tugas 2 & Tugas 3 */
+        /* Container Tombol Tugas */
         .tugas-buttons {
             display: flex;
             justify-content: center;
-            gap: 20px;
+            gap: 15px;
             flex-wrap: wrap;
             margin: 30px 0;
         }
 
-        /* Tombol Tugas */
         .btn-tugas {
             display: inline-block;
             background-color: #8d6e63;
             color: white;
-            padding: 14px 28px;
-            font-size: 1.1rem;
+            padding: 14px 24px;
+            font-size: 1.05rem;
             font-weight: bold;
             text-decoration: none;
             border-radius: 8px;
             box-shadow: 0 4px 12px rgba(0,0,0,0.15);
             transition: all 0.3s ease;
-            min-width: 220px;
+            min-width: 200px;
         }
 
         .btn-tugas:hover {
@@ -102,7 +100,6 @@
             border-top: 1px solid #d7ccc8;
         }
 
-        /* Responsif */
         @media (max-width: 600px) {
             nav {
                 flex-direction: column;
@@ -116,7 +113,7 @@
                 align-items: center;
             }
             .btn-tugas {
-                min-width: 80%;
+                min-width: 85%;
             }
         }
     </style>
@@ -138,14 +135,14 @@
         <section class="welcome-section">
             <h2>Halo! Kenalin saya Maya 👋</h2>
             <p>
-                Selamat datang di website saya perkenalkan saya Noer Mayadha seorang mahasiswi Sosial Ekonomi Perikanan, Fakultas Perikanan dan Ilmu Kelautan Universitas Lambung Mangkurat.
+                Selamat datang di website bertema Coklat yang saya buat.
             </p>
             <p>
                 Silahkan jelajahi menu navigasi di atas untuk melihat detail biodata diri,
                 koleksi foto dan video yang tersedia.
             </p>
 
-            <!-- Tombol Tugas 2 dan Tugas 3 -->
+            <!-- Tombol Tugas 2, 3, dan 4 -->
             <div class="tugas-buttons">
                 <a href="https://noermayadhaa-star.github.io/NOERMAYADHAAA/" target="_blank" class="btn-tugas">
                     📂 Tugas 2 - Lihat Website
@@ -153,10 +150,13 @@
                 <a href="https://forms.gle/kHYPuNc8iTLk2wk4A" target="_blank" class="btn-tugas">
                     📋 Tugas 3 - Isi Google Form
                 </a>
+                <a href="https://forms.gle/KMeJRdLjbQyqou3eA" target="_blank" class="btn-tugas">
+                    📋 Tugas 4 - Isi Kuesioner
+                </a>
             </div>
 
             <p style="color: #6d4c41;">
-                Klik tombol di atas untuk melihat Tugas 2 atau mengisi Tugas 3.
+                Klik tombol di atas untuk mengakses Tugas 2, Tugas 3, dan Tugas 4.
             </p>
         </section>
     </div>
