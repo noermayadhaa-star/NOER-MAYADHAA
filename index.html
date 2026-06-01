@@ -158,58 +158,105 @@
                 <!-- ==================== TUGAS AKHIR ==================== -->
 <div class="section" style="margin-top: 50px;">
 
-    <!-- Tombol Besar Tugas Akhir -->
-    <div style="text-align: center; margin-bottom: 20px;">
+    <!-- Tombol Besar Pembuka Tugas Akhir -->
+    <div style="text-align: center; margin-bottom: 30px;">
         <button onclick="toggleTugasAkhir()" id="btnTugasAkhir" 
-                style="background: linear-gradient(135deg, #2952cc, #1e40a0); color: white; 
-                       padding: 18px 40px; font-size: 22px; border: none; border-radius: 12px; 
-                       cursor: pointer; box-shadow: 0 6px 20px rgba(41,82,204,0.3);">
+                style="background: linear-gradient(135deg, #A0522D, #6B3E1E); color: white; 
+                       padding: 18px 50px; font-size: 22px; border: none; border-radius: 12px; 
+                       cursor: pointer; box-shadow: 0 6px 20px rgba(160,82,45,0.4); width: 100%; max-width: 600px;">
             <i class="fas fa-graduation-cap"></i> TUGAS AKHIR - Simpan Pinjam POKLAHSAR
         </button>
     </div>
 
-    <!-- Konten yang Muncul Setelah Diklik -->
-    <div id="kontenTugasAkhir" style="display: none; margin-top: 30px;">
+    <!-- Konten Tugas Akhir -->
+    <div id="kontenTugasAkhir" style="display: none; margin-top: 20px;">
 
-        <h3 style="color:#2952cc; margin: 25px 0 12px 0;">1. Form Pendaftaran Simpan Pinjam</h3>
-        <a href="https://forms.gle/SVU4L2kc4JeXphMfA" target="_blank" class="btn">
-            <i class="fas fa-edit"></i> Isi Form Pendaftaran
-        </a>
+        <div style="display: grid; gap: 25px;">
 
-        <h3 style="color:#2952cc; margin: 35px 0 12px 0;">2. Data Pendaftaran Simpan Pinjam</h3>
-        <a href="https://docs.google.com/spreadsheets/d/1xkkW0MT_WndFe1zq9aDmquDkALTPnsM-vXsUQECYGmM/edit?usp=sharing" 
-           target="_blank" class="btn">
-            <i class="fas fa-table"></i> Lihat Data Spreadsheet
-        </a>
+            <!-- 1 -->
+            <div>
+                <h3 style="color:#A0522D; margin-bottom: 12px;">1. Form Pendaftaran Simpan Pinjam</h3>
+                <a href="https://forms.gle/SVU4L2kc4JeXphMfA" target="_blank" class="btn" 
+                   style="background:#A0522D; padding: 14px 25px; font-size: 1.1rem; width: 100%; max-width: 400px; display: inline-flex; align-items: center; justify-content: center; gap: 10px;">
+                    <i class="fas fa-edit"></i> Isi Form Pendaftaran
+                </a>
+            </div>
 
-        <h3 style="color:#2952cc; margin: 35px 0 12px 0;">3. Visualisasi Data Pendaftaran</h3>
-        <a href="https://datastudio.google.com/reporting/6995eabe-d8fe-48eb-87cb-c32c4c0bf9e7" 
-           target="_blank" class="btn btn-info">
-            <i class="fas fa-chart-bar"></i> Lihat Dashboard Looker Studio
-        </a>
+            <!-- 2 -->
+            <div>
+                <h3 style="color:#A0522D; margin-bottom: 12px;">2. Data Pendaftaran Simpan Pinjam</h3>
+                <a href="https://docs.google.com/spreadsheets/d/1xkkW0MT_WndFe1zq9aDmquDkALTPnsM-vXsUQECYGmM/edit?usp=sharing" 
+                   target="_blank" class="btn" style="background:#A0522D; padding: 14px 25px; font-size: 1.1rem; width: 100%; max-width: 400px; display: inline-flex; align-items: center; justify-content: center; gap: 10px;">
+                    <i class="fas fa-table"></i> Lihat Data Spreadsheet
+                </a>
+            </div>
 
-        <h3 style="color:#2952cc; margin: 35px 0 12px 0;">4. Survey Tingkat Kepuasan</h3>
-        <a href="https://forms.gle/jDrarFrtbcEn9kAc9" target="_blank" class="btn btn-success">
-            <i class="fas fa-poll"></i> Isi Survey Kepuasan
-        </a>
+            <!-- 3 -->
+            <div>
+                <h3 style="color:#A0522D; margin-bottom: 12px;">3. Visualisasi Data Pendaftaran</h3>
+                <a href="https://datastudio.google.com/reporting/6995eabe-d8fe-48eb-87cb-c32c4c0bf9e7" 
+                   target="_blank" class="btn" style="background:#CD853F; padding: 14px 25px; font-size: 1.1rem; width: 100%; max-width: 400px; display: inline-flex; align-items: center; justify-content: center; gap: 10px;">
+                    <i class="fas fa-chart-pie"></i> Lihat Dashboard Looker Studio
+                </a>
+            </div>
 
-        <h3 style="color:#2952cc; margin: 35px 0 12px 0;">5. Data Survey Kepuasan</h3>
-        <a href="https://docs.google.com/spreadsheets/d/15VXtdYKqxzrwvmAMjjYeTardwSK3BtnH74FnkrKn4K8/edit?usp=sharing" 
-           target="_blank" class="btn">
-            <i class="fas fa-table"></i> Lihat Data Spreadsheet Kepuasan
-        </a>
+            <!-- 4 -->
+            <div>
+                <h3 style="color:#A0522D; margin-bottom: 12px;">4. Survey Tingkat Kepuasan</h3>
+                <a href="https://forms.gle/jDrarFrtbcEn9kAc9" target="_blank" class="btn" 
+                   style="background:#8B5A2B; padding: 14px 25px; font-size: 1.1rem; width: 100%; max-width: 400px; display: inline-flex; align-items: center; justify-content: center; gap: 10px;">
+                    <i class="fas fa-poll"></i> Isi Survey Kepuasan
+                </a>
+            </div>
 
-        <h3 style="color:#2952cc; margin: 35px 0 12px 0;">6. Visualisasi Survey Kepuasan</h3>
-        <a href="https://datastudio.google.com/reporting/42bad7b9-47dd-4825-9d78-8dae41d13904" 
-           target="_blank" class="btn btn-info">
-            <i class="fas fa-chart-bar"></i> Lihat Dashboard Looker Studio
-        </a>
+            <!-- 5 -->
+            <div>
+                <h3 style="color:#A0522D; margin-bottom: 12px;">5. Data Survey Kepuasan</h3>
+                <a href="https://docs.google.com/spreadsheets/d/15VXtdYKqxzrwvmAMjjYeTardwSK3BtnH74FnkrKn4K8/edit?usp=sharing" 
+                   target="_blank" class="btn" style="background:#A0522D; padding: 14px 25px; font-size: 1.1rem; width: 100%; max-width: 400px; display: inline-flex; align-items: center; justify-content: center; gap: 10px;">
+                    <i class="fas fa-table"></i> Lihat Data Spreadsheet Kepuasan
+                </a>
+            </div>
 
-        <h3 style="color:#2952cc; margin: 35px 0 12px 0;">7. Hasil Analisis Simpan Pinjam</h3>
-        <a href="https://docs.google.com/spreadsheets/d/1fiwfP9m6EPaaA5MUommdlJjq8MmTcdPS/edit?usp=sharing" 
-           target="_blank" class="btn">
-            <i class="fas fa-download"></i> Lihat Hasil Analisis Excel
-        </a>
+            <!-- 6 -->
+            <div>
+                <h3 style="color:#A0522D; margin-bottom: 12px;">6. Visualisasi Survey Kepuasan</h3>
+                <a href="https://datastudio.google.com/reporting/42bad7b9-47dd-4825-9d78-8dae41d13904" 
+                   target="_blank" class="btn" style="background:#CD853F; padding: 14px 25px; font-size: 1.1rem; width: 100%; max-width: 400px; display: inline-flex; align-items: center; justify-content: center; gap: 10px;">
+                    <i class="fas fa-chart-bar"></i> Lihat Dashboard Looker Studio
+                </a>
+            </div>
+
+            <!-- 7 -->
+            <div>
+                <h3 style="color:#A0522D; margin-bottom: 12px;">7. Hasil Analisis Simpan Pinjam</h3>
+                <a href="https://docs.google.com/spreadsheets/d/1fiwfP9m6EPaaA5MUommdlJjq8MmTcdPS/edit?usp=sharing" 
+                   target="_blank" class="btn" style="background:#A0522D; padding: 14px 25px; font-size: 1.1rem; width: 100%; max-width: 400px; display: inline-flex; align-items: center; justify-content: center; gap: 10px;">
+                    <i class="fas fa-download"></i> Lihat Hasil Analisis Excel
+                </a>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!-- JavaScript Toggle -->
+<script>
+function toggleTugasAkhir() {
+    var konten = document.getElementById("kontenTugasAkhir");
+    var btn = document.getElementById("btnTugasAkhir");
+    
+    if (konten.style.display === "none") {
+        konten.style.display = "block";
+        btn.innerHTML = '<i class="fas fa-times"></i> Tutup Tugas Akhir';
+        btn.style.background = 'linear-gradient(135deg, #6B3E1E, #8B5A2B)';
+    } else {
+        konten.style.display = "none";
+        btn.innerHTML = '<i class="fas fa-graduation-cap"></i> TUGAS AKHIR - Simpan Pinjam POKLAHSAR';
+        btn.style.background = 'linear-gradient(135deg, #A0522D, #6B3E1E)';
+    }
+}
+</script>
 
     </div>
 </div>
